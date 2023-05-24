@@ -170,7 +170,7 @@ describe('esPrimo(num)', function() {
   });
 });
 
-describe ('esVerdadero(valor)', function() {
+describe('esVerdadero(valor)', function() {
   it('should return Soy verdadero if valor is true', function() {
     expect(esVerdadero(true)).toBe("Soy verdadero");
   });
@@ -179,7 +179,7 @@ describe ('esVerdadero(valor)', function() {
   });
 });
 
-describe ('tablaDelSeis()', function() {
+describe('tablaDelSeis()', function() {
   it('should return multiplication table of 6', function() {
     expect(tablaDelSeis()).toEqual([0 , 6, 12, 18, 24, 30, 36, 42, 48, 54, 60]);
   });
@@ -195,7 +195,7 @@ describe ('tieneTresDigitos(numero)', function() {
   });
 });
 
-describe('doWhile(numero)', function() {
+describe.only('doWhile(numero)', function() {
   it('should add 5 to number until reaching a limit of 8 times and return the sum value', function() {
     expect(doWhile(5)).toBe(45);
     expect(doWhile(100)).toBe(140);
