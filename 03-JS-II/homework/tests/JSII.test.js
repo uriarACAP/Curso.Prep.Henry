@@ -195,7 +195,7 @@ describe ('tieneTresDigitos(numero)', function() {
   });
 });
 
-describe.only('doWhile(numero)', function() {
+describe('doWhile(numero)', function() {
   it('should add 5 to number until reaching a limit of 8 times and return the sum value', function() {
     expect(doWhile(5)).toBe(45);
     expect(doWhile(100)).toBe(140);
