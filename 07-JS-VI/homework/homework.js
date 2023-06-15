@@ -4,17 +4,27 @@ function mayuscula(nombre) {
   //La función recibe un nombre y debe devolver el mismo que recibe pero con su primer letra en mayúscula
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:
+   var arr = nombre.split("");
+   var letra = arr.shift();
+   var mayus = letra.toUpperCase();
+   arr.unshift(mayus);
+  return arr.join("");
+//   const primerLetra = nombre.charAt(0);
+// primerLetra.toUpperCase();
+// return primerLetra.concat(nombre); 
 }
 
 function invocarCallback(cb) {
   // Invoca al callback `cb`
   //Tu código:
+  return cb();
 }
 
 function operacionMatematica(n1, n2, cb) {
   //Vamos a recibir una función que realiza una operación matemática como callback junto con dos números.
   //Devolver el callback pasándole como argumentos los números recibidos.
   //Tu código:
+  return cb(n1,n2);
 }
 
 function sumarArray(numeros, cb) {
@@ -22,12 +32,19 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
+  const suma = cb(numeros.reduce(function (a,b){
+    return a + b;
+  }));
+
 }
 
 function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
+  array.forEach((elemento) => {
+    return cb(elemento);
+  })
 }
 
 function map(array, cb) {
@@ -35,12 +52,21 @@ function map(array, cb) {
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
+  var arr = array.map((elemento) =>{
+    return cb(elemento);
+   });
+   return arr;
+
 }
 
 function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
+  let nuevoArr = array.filter(a => a[0] === "a");
+  return nuevoArr;
+
+
 }
 
 // No modificar nada debajo de esta línea
