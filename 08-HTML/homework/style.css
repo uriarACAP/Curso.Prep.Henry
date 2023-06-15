@@ -1,0 +1,25 @@
+
+body {
+    background-image: url("https://cloudfront-us-east-1.images.arcpublishing.com/infobae/DUOMNI7QSZBJ6SEPGBJ4LQPZCA.jpg");
+     display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    color:mediumseagreen ;
+}
+img{   
+    width: 400px;
+}
+#thirdDiv{
+    background-color: blueviolet;
+    height: 600px;
+    width: 500px;
+    padding: 50px;
+    border: 58px blue solid;
+}
+#spanId{
+    font-size: 18px;
+    margin: 50px;
+}
