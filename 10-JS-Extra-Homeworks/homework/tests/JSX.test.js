@@ -28,7 +28,7 @@ describe('numberOfCharacters(string)', function() {
 describe('capToFront(s)', function() {
     it('should return all capital letters at the beginning of the word.', function() {
     expect(capToFront("soyHENRY")).toEqual("HENRYsoy");
-    expect(capToFront("DESArrollaDOR")).toEqual("DESADORrrolla");
+   expect(capToFront("DESArrollaDOR")).toEqual("DESADORrrolla");
   });
 }); 
 
